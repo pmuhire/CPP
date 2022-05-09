@@ -132,6 +132,7 @@ public:
         newNode->next=node;
         newNode->prev=before;
         before->next=newNode;
+        node->prev=newNode;
         
     }
 };
